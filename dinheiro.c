@@ -26,7 +26,7 @@ negative = false;
 return positiveFloat;
 }
 
-//Esta função irá performar o caminho das moedas que nós temos contado e retornar isso como uma integral
+//Esta função irá performar o caminho das moedas que nós temos contado e retornar isso como um numero inteiro
 int coinNum()
 {
 //Pegar o input do usuário e retornar isso em número total de centavos, nós iremos falar para arredondar com uma função de math.h
@@ -79,7 +79,7 @@ if (totalCents >= penny)
     numOfCoins = numOfCoins + (tempNum / penny);
     totalCents = remainder;
 }
-// como prometido retornamos uma integral de numOfCoins
+// como prometido retornamos um numero inteiro de numOfCoins
 return numOfCoins;
 }
 int main(void)
